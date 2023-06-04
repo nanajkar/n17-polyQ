@@ -5,7 +5,7 @@ This tutorial explains how to set up the N17+7Q system discussed in ** Conformat
 ### Generate the protein gro file 
 Create a file called seq.txt containing the sequence of the protein to simulate. For N17+7Q system the sequence is MATLEKLMKAFESLKSFQQQQQQQ.
 
-The following command will create a gro file entitled protein.gro that corresponds to the sequence supplied in seq.txt
+The following command will create a gro file entitled protein.gro, corresponding to the sequence supplied in seq.txt
 > python create_prot_gro.py -f seq.txt -o protein.gro
 
 ### Generate the protein itp file
