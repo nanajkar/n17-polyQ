@@ -1,6 +1,9 @@
 # n17-polyQ
 
-This tutorial explains how to set up the N17+7Q system discussed in ** Conformations of the Huntingtin protein and variations in its aggregate morphology**. Other lengths of polyQ can be created by following the same protocol. 
+
+Thhis repository contains all files required to set up protein aggregation simulations similar to those carried out in  ** Conformations of the Huntingtin protein and variations in its aggregate morphology**. This tutorial is used to set up N17+7Q aggregation system, but other lengths of polyQ can be created by following the same protocol with minor tweaks. 
+
+**Need to include a file tree so people know contents of each folder**
 
 ### Generate the protein gro file 
 Create a file called seq.txt containing the sequence of the protein to simulate. For N17+7Q system the sequence is MATLEKLMKAFESLKSFQQQQQQQ.
@@ -20,6 +23,14 @@ Move this file to the itps folder.
 
 ### Set up script
 
-The simulation will be set up using protocol.py. This script adds proteins and ions to the water box and performs many rounds of equilibriation. 
+protocol.py is a comprehensive script that can be used to setup all simulations(with minor tweaks). The script is set up as follows
+
+1. Minimizing and equilibrating the extended protein structure in vaccum
+2. Addition of proteins to the water box
+3. Updating the mdp and topology files to reflect the particles in the system 
+4. Addition of counterions and a salt concentration that amounts to 125 mM
+5. Multiple rounds of equilibration
+6. Creation of the final tpr file
+
 
 
