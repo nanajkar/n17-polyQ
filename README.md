@@ -5,6 +5,20 @@ Thhis repository contains all files required to set up protein aggregation simul
 
 **Need to include a file tree so people know contents of each folder**
 
+## Files
+-itps/
+  + fixedff_noCP.itp -
+  + martini+v2.0_ions.itp
+  + protein.itp
+  + posre_protein.itp
+  + water.em.itp
+  + water.md.itp
+-gen_conf/
+  + create_prot_gro.py
+  + +gen_prot_em.itp.py
+  + seq.txt
+-em_md/ 
+
 ### Generate the protein gro file 
 Create a file called seq.txt containing the sequence of the protein to simulate. For N17+7Q system the sequence is MATLEKLMKAFESLKSFQQQQQQQ.
 
