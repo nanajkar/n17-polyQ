@@ -32,14 +32,14 @@ Use the following command to create an itp file for the sequence provided in seq
 In our model, a dihedral potential is applied to the N17 domain, but not to the polyQ domain. This needs to be changed manually in the protein.itp file. In the **[dihedrals]** section, delete the lines corresponding to dihedral angles in the polyQ domain. Thus, the last line in the **[dihedrals]** section should be as follows-
 > 61              65              70              76              8                 0      10
 
-Navigate back to the outer directory.
+Navigate back to the outer directory using ``` cd ..```.
 
 ### Set up script
 
-setup.py is a comprehensive script that can be used to setup all simulations( with minor tweaks). The script is set up as follows
+setup.py is a comprehensive script that can be used to setup the simulations( with minor tweaks). The script is set up as follows
 
 1. Minimizing and equilibrating the extended protein structure in vaccum
-2. Addition of proteins to the water box
+2. Addition of protein to the water box
 3. Updating the mdp and topology files to reflect the particles in the system 
 4. Addition of counterions and a salt concentration that amounts to 125 mM
 5. Multiple rounds of equilibration
@@ -48,6 +48,8 @@ setup.py is a comprehensive script that can be used to setup all simulations( wi
 
 To run it, simply runt he following command.
 > python3 setup.py
+
+To change the number of ions/counter ions update the number of ions according to the following formula
 
 
 
