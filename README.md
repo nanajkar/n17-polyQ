@@ -14,7 +14,7 @@ This repository contains all files required to set up protein aggregation simula
   + ```water.md.itp``` - Topology for Martini Polarizable Water. Interaction between the backbone and dummy charges are modelled as harmonic bonds.
 - ```gen_conf/```
   + ```create_prot_gro.py``` - Script to construct the initial gro file of the protein from sequence 
-  + ```+gen_prot_em.itp.py``` - Script to contruct the topology file for the protein
+  + ```gen_prot_em.itp.py``` - Script to contruct the topology file for the protein
   + ```seq.txt``` - Input for both ```create_prot_gro.py``` and ```+gen_prot_em.itp.py``` 
 - ```tables/``` - Contains angular and dihedral potentials
 
@@ -30,9 +30,9 @@ Use the following command to create an itp file for the sequence provided in seq
 > python gen_prot_em.itp.py -f seq.txt -o protein.itp
 
 In our model, a dihedral potential is applied to the N17 domain, but not to the polyQ domain. This needs to be changed manually in the protein.itp file. In the **[dihedrals]** section, delete the lines corresponding to dihedral angles in the polyQ domain. Thus, the last line in the **[dihedrals]** section should be as follows-
-> 61              65              70              76              8                 0      10
+> 61&nbsp; 65&nbsp; 70&nbsp; 76&nbsp; 8 &nbsp; 0&nbsp; 10
 
-Navigate back to the outer directory using ``` cd ..```.
+Navigate back to the outer directory using ``` cd ..```
 
 ### Set up script
 
