@@ -1,7 +1,7 @@
 # n17-polyQ
 
 
-Thhis repository contains all files required to set up protein aggregation simulations similar to those carried out in  **Conformations of the Huntingtin protein and variations in its aggregate morphology**. This tutorial is used to set up N17+7Q aggregation system, but other lengths of polyQ can be created with minor tweaks to the protocol. 
+This repository contains all files required to set up protein aggregation simulations similar to those carried out in  **Conformations of the Huntingtin protein and variations in its aggregate morphology**. This tutorial is used to set up N17+7Q aggregation system, but other lengths of polyQ can be created with minor tweaks to the protocol. 
 
 
 ## Files
