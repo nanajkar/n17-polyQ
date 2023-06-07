@@ -49,8 +49,8 @@ setup.py is a comprehensive script that sets up simulation with minor ( with min
 To run it, simply run the following command.
 > python setup.py
 
-To calculate the number of ions to be added, use the following formula
-$` \frac{4*number of waters*ion concentration}{55.5+ion concentration} `$
+To calculate the number of ions to be added, use the following formula : 
+$` \frac{4*N_{PW}*M_{NaCl}}{55.5+M_{NaCl}} `$
 
 
 
