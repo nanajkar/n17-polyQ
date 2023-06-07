@@ -41,7 +41,7 @@ setup.py is a comprehensive script that sets up simulation with minor ( with min
 1. Minimizing and equilibrating the extended protein structure in vaccum
 2. Addition of protein to the water box
 3. Updating the mdp and topology files to reflect the particles in the system 
-4. Addition of counterions to neutralize the system and a salt concentration amounting to 125 mM. The number of ions to be added will change depending on the size  of the simulation box.  
+4. Addition of counterions to neutralize the system and a salt concentration amounting to 125 mM. The number of ions to be added will change depending on the size  of the simulation box. To calculate the number of ions to be added, use the following formula :  $` \frac{4*N_{PW}*M_{NaCl}}{55.5+M_{NaCl}} `$ , where $` N_{PW}`$ represents the number of coarse-grain water beads in the system and $` M_{NaCl}`$ denotes the desired salt molar concentration, in this case 125mM. 
 5. Multiple rounds of equilibration
 6. Creation of the final tpr file
 
@@ -49,8 +49,9 @@ setup.py is a comprehensive script that sets up simulation with minor ( with min
 To run it, simply run the following command.
 > python setup.py
 
-To calculate the number of ions to be added, use the following formula : 
-$` \frac{4*N_{PW}*M_{NaCl}}{55.5+M_{NaCl}} `$
+
+
+
 
 
 
