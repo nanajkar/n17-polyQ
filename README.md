@@ -36,20 +36,21 @@ Navigate back to the outer directory using ```cd ..```
 
 ### Set up script
 
-setup.py is a comprehensive script that can be used to setup the simulations( with minor tweaks). The script is set up as follows
+setup.py is a comprehensive script that sets up simulation with minor ( with minor tweaks). The script is set up as follows
 
 1. Minimizing and equilibrating the extended protein structure in vaccum
 2. Addition of protein to the water box
 3. Updating the mdp and topology files to reflect the particles in the system 
-4. Addition of counterions and a salt concentration that amounts to 125 mM
+4. Addition of counterions to neutralize the system and a salt concentration amounting to 125 mM. The number of ions to be added will change depending on the size  of the simulation box.  
 5. Multiple rounds of equilibration
 6. Creation of the final tpr file
 
 
-To run it, simply runt he following command.
-> python3 setup.py
+To run it, simply run the following command.
+> python setup.py
 
-To change the number of ions/counter ions update the number of ions according to the following formula
+To calculate the number of ions to be added, use the following formula
+$$ \frac{4*number of waters*ion concentration}{55.5+ion concentration}$$
 
 
 
