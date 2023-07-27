@@ -11,7 +11,7 @@ This repository contains all files required to set up protein aggregation simula
  ## Contributions and  Acknowledegments
  This tutorial was created by Neha Nanajkar. Simulations referenced in the paper were carried out by Neha Nanajkar. Subsequent analysis was jointly carried out by Neha Nanajkar and Abhilash Sahoo, under the guidance of Silvina Matysiak. 
 
- For questions or clarifications please reach out to Silvina Matysiak(matysiak@umd.edu) or Neha Nanajkar(nanajkar@terpmail.umd.edu)
+ For questions, clarifications or requests, reach out to Silvina Matysiak(matysiak@umd.edu) or Neha Nanajkar(nanajkar@terpmail.umd.edu)
 
 
 ## Files
@@ -24,8 +24,8 @@ This repository contains all files required to set up protein aggregation simula
   + ```water.md.itp``` - Topology for Martini Polarizable Water. Interaction between the backbone and dummy charges are modelled as harmonic bonds.
 - ```gen_conf/```
   + ```create_prot_gro.py``` - Script to construct the initial gro file of the protein from sequence provided in ```seq.txt```
-  + ```gen_prot_em.itp.py``` - Script to contruct the topology file for the protein
-  + ```seq.txt``` - Input for both ```create_prot_gro.py``` and ```gen_prot_em.itp.py``` 
+  + ```genitp_em.py``` - Script to contruct the topology file for the protein
+  + ```seq.txt``` - Input for both ```create_prot_gro.py``` and ```genitp_em.py``` 
 - ```tables/``` - Contains tabulated angular and dihedral potentials
 
 ### 1. Generate the protein gro file 
@@ -37,7 +37,7 @@ The following command will create a gro file entitled protein.gro, corresponding
 ### 2. Generate the protein itp file
 
 Use the following command to create an itp file for the sequence provided in seq.txt
-> python gen_prot_em.itp.py -f seq.txt -o protein.itp
+> python genitp_em.py -f seq.txt -o protein.itp
 
 In our model, a dihedral potential is applied to the backbone of the N17 domain, but not to the polyQ domain. This needs to be changed manually in the protein.itp file. In the **[dihedrals]** section, delete the lines corresponding to dihedral angles in the polyQ domain. Thus, the last line in the `tabulated dihedrals between BB and BB beads` section should be between beads 61, 65, 70, and 76. 
 
