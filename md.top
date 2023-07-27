@@ -1,0 +1,18 @@
+#include "itps/fixedff_noCP.itp"
+#include "itps/martini_v2.0_ions.itp"
+#include "itps/water.md.itp" 
+#include "itps/protein.itp"
+#ifdef POSRES
+#include "itps/posre_protein.itp"
+#endif
+
+
+[ system ]
+n17_7Q
+
+[ molecules ]
+
+Protein	6
+PW	12447
+ION	113
+CL	119

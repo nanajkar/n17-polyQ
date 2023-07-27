@@ -1,0 +1,13 @@
+#include "itps/fixedff_noCP.itp"
+#include "itps/martini_v2.0_ions.itp"
+#include "itps/protein.itp"
+#include "itps/water.md.itp"
+
+; #define EM
+
+[ system ]
+n17_7Q
+
+[ molecules ]
+
+Protein   1 
