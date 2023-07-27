@@ -42,7 +42,7 @@ Navigate back to the outer directory using ```cd ..```
 
 ### 3. Set up script
 
-setup.py is a comprehensive script that sets up simulation (with minor tweaks). The script is set up as follows
+setup.py is a comprehensive script that sets up simulations. The script is set up as follows - 
 
 1. Minimizing and equilibrating the extended protein structure in vaccum
 2. Addition of protein to the water box
