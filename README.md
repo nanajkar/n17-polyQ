@@ -5,8 +5,10 @@ This repository contains all files required to set up protein aggregation simula
 
 
 ## Software Requirements
-- Python 
-- Gromacs 2019.4 (Will also work with Gromacs 2018.3()
+- Python 2 or Python 3
+- Gromacs 2019.4 (Will also work with Gromacs 2018.3). This tutorial assumes a non-MPI installation of Gromacs, however, by changing the gmx binary to `gmx_mpi`, the tutorial should work with MPI installations.
+
+ 
 
 
 ## Files
