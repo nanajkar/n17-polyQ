@@ -29,8 +29,7 @@ The following command will create a gro file entitled protein.gro, corresponding
 Use the following command to create an itp file for the sequence provided in seq.txt
 > python gen_prot_em.itp.py -f seq.txt -o protein.itp
 
-In our model, a dihedral potential is applied to the backbone of the N17 domain, but not to the polyQ domain. This needs to be changed manually in the protein.itp file. In the **[dihedrals]** section, delete the lines corresponding to dihedral angles in the polyQ domain. Thus, the last line in the **[dihedrals]** section should be as follows-
-> 61 &nbsp; 65 &nbsp; 70 &nbsp; 76 &nbsp; 8 &nbsp; 0 &nbsp; 10
+In our model, a dihedral potential is applied to the backbone of the N17 domain, but not to the polyQ domain. This needs to be changed manually in the protein.itp file. In the **[dihedrals]** section, delete the lines corresponding to dihedral angles in the polyQ domain. Thus, the last line in the `tabulated dihedrals between BB and BB beads` section should be between beads 61, 65, 70, and 76. 
 
 Navigate back to the outer directory using ```cd ..```
 
