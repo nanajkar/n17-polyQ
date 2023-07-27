@@ -8,7 +8,10 @@ This repository contains all files required to set up protein aggregation simula
 - Python 2 or Python 3
 - Gromacs 2019.4 (Will also work with Gromacs 2018.3). This tutorial assumes a non-MPI installation of Gromacs, however, by changing the gmx binary to `gmx_mpi`, the tutorial should work with MPI installations.
 
- 
+ ## Contributions and  Acknowledegments
+ This tutorial was created by Neha Nanajkar. Simulations referenced in the paper were carried out by Neha Nanajkar. Subsequent analysis was jointly carried out by Neha Nanajkar and Abhilash Sahoo, under the guidance of Silvina Matysiak. 
+
+ For questions or clarifications please reach out to Silvina Matysiak(matysiak@umd.edu) or Neha Nanajkar(nanajkar@terpmail.umd.edu)
 
 
 ## Files
