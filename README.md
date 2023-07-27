@@ -23,10 +23,10 @@ This repository contains all files required to set up protein aggregation simula
   + ```water.em.itp``` - Topology for Martini Polarizable Water. Interaction between the backbone and dummy charges are treated as contraints.
   + ```water.md.itp``` - Topology for Martini Polarizable Water. Interaction between the backbone and dummy charges are modelled as harmonic bonds.
 - ```gen_conf/```
-  + ```create_prot_gro.py``` - Script to construct the initial gro file of the protein from sequence 
+  + ```create_prot_gro.py``` - Script to construct the initial gro file of the protein from sequence provided in ```seq.txt```
   + ```gen_prot_em.itp.py``` - Script to contruct the topology file for the protein
-  + ```seq.txt``` - Input for both ```create_prot_gro.py``` and ```+gen_prot_em.itp.py``` 
-- ```tables/``` - Contains angular and dihedral potentials
+  + ```seq.txt``` - Input for both ```create_prot_gro.py``` and ```gen_prot_em.itp.py``` 
+- ```tables/``` - Contains tabulated angular and dihedral potentials
 
 ### 1. Generate the protein gro file 
 Navigate to ```gen_conf```. Create a file called seq.txt containing the sequence of the protein to simulate. For this tutorial, we use the sequence for N17+7Q, MATLEKLMKAFESLKSFQQQQQQQ.
