@@ -1,7 +1,12 @@
 # n17-polyQ
 
 
-This repository contains all files required to set up protein aggregation simulations similar to those carried out in  **Conformations of the Huntingtin protein and variations in its aggregate morphology**. This tutorial is used to set up N17+7Q aggregation system, but other lengths of polyQ can be created with minor tweaks to the protocol. 
+This repository contains all files required to set up protein aggregation simulations similar to those carried out in  **Conformations of the Huntingtin protein and variations in its aggregate morphology**. This tutorial is used to set up N17+7Q aggregate system, but other lengths of polyQ can be created with minimal changes. 
+
+
+## Software Requirements
+- Python 
+- Gromacs 2019.4 (Will also work with Gromacs 2018.3()
 
 
 ## Files
@@ -41,7 +46,7 @@ setup.py is a comprehensive script that sets up simulation (with minor tweaks). 
 2. Addition of protein to the water box
 3. Updating the mdp and topology files to reflect the particles in the system 
 4. Addition of counterions to neutralize the system and a salt concentration amounting to 125 mM using the ```genion``` command. The number of ions to be added will change depending on the size  of the simulation box. To calculate the number of ions to be added, use the following formula :  $` \frac{4*N_{PW}*M_{NaCl}}{55.5+M_{NaCl}} `$ , where $` N_{PW}`$ represents the number of coarse-grain water beads in the system and $` M_{NaCl}`$ denotes the desired salt molar concentration, in this case 125mM. 
-5. Multiple rounds of equilibration
+5. Multiple rounds of NPT equilibration
 6. Creation of the final tpr file
 
 
