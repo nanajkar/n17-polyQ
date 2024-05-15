@@ -27,6 +27,7 @@ This repository contains all files required to set up protein aggregation simula
   + ```genitp_em.py``` - Script to contruct the topology file for the protein
   + ```seq.txt``` - Input for both ```create_prot_gro.py``` and ```genitp_em.py``` 
 - ```tables/``` - Contains tabulated angular and dihedral potentials
+- ```analysis.py``` - Functions to peform analysis on the self-assembly simulations. 
 
 ### 1. Generate the protein gro file 
 Navigate to ```gen_conf```. Create a file called seq.txt containing the sequence of the protein to simulate. For this tutorial, we use the sequence for N17+7Q, MATLEKLMKAFESLKSFQQQQQQQ.
